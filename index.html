@@ -1,13 +1,158 @@
 ---
-layout: default
-title: Your New Jekyll Site
+layout: product
+title: La nueva cartagena
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<body>
+
+
+<div class="masthead">
+	<div class="row fixShiftLeft">
+		<div class="logo-centered">
+   			<a href="index.html"><img src="img/masthead/logo2.png"></a>
+   	</div>
+  </div>
 </div>
+
+<!-- Masthead  buttons -->
+<div class="row small-Margin">
+  <div class="col-xs-2 col-xs-offset-10" data-toggle="buttons">
+    <label id="language" class="btn btn-warning">
+      <input type="checkbox"><div class="español">Enlgish</div><div class="english">Español</div>
+    </label>
+  </div>
+</div>
+
+
+<div class="navbar-wrapper" style="margin-top:166px;">
+  <div class="container">
+    <div class="navbar navbar-inverse navMod" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#about">Cartagena Laguna Club</a></li>
+          <li><a href="apartamentos.html"><div class="español">Apartamentos</div><div class="english">Real Estate</div></a></li>
+          <li><a href="cartagena.html">Cartagena</a></li>
+          <li><a href="#contact"><div class="español">Aventuras</div><div class="english">Adventures</div></a></li>
+          <li><a href="contactenos.html"><div class="español">Contáctenos</div><div class="english">Contact us</div></a></li>
+        </ul>
+      </div>     
+    </div>
+  </div>
+</div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top:-25px;">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="3" class="active"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item">
+          <img src="img/homePage/F1.png" alt="First slide">
+        </div>
+        <div class="item">
+          <img src="img/homePage/F2.png" alt="Second slide">
+        </div>
+        <div class="item">
+          <img src="img/homePage/F3.png" alt="Third slide">
+        </div>
+        <div class="item active">
+          <img src="img/homePage/F5.png" alt="Fourth slide">
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- START THE FEATURETTES -->
+
+      <div class="row featurette" style="margin-top:50px;">
+        <div class="col-xs-offset-3 col-xs-9 col-md-offset-4 col-md-8">
+          <h1 class="">Laguna Club Cartagena</h1>
+        </div>
+      </div>
+
+      <div class="row featurette">
+        <div class="col-xs-offset-5 col-xs-7">
+          <div class="español"><h2 style="margin-top:-15px;" ><small><span class="text-muted"> Una joya escondida
+</span></small></h2></div><div class="english"><h2 style="margin-top:-15px;" ><small><span class="text-muted"> A hidden Gem
+</span></small></h2></div>
+        </div>
+      </div>
+
+      <div class="row featurette">
+        <div class="col-xs-12">
+          <div class="español"><p class="lead text-center">Para los amantes de Cartagena de Indias, el aire puro, la tranquilidad y el contacto con la naturaleza se concibió Laguna Club Cartagena. Con diseño mediterráneo, rodeado de lagos y vegetación, y dentro de un Club que lo ofrece todo. Este proyecto se consolida como la mejor opción para vivir con su familia todo lo que siempre soñó.</p></div><div class="english"><p class="lead text-center">For those who love Cartagena de Indias, fresh air, tranquility, and being in touch with nature, we created Laguna Club Cartagena. With a mediterranean design, sorrounded by lakes and nature, and inside a Club that has everything to offer, this project is the best option you have always dreamed of for you and your family.</p></div>
+        </div>
+      </div>
+
+      <hr style="color:#518F36" style="margin-top:50px;">
+
+      <div class="row" style="margin-top:50px;">
+        <div class="col-xs-6 col-xs-4">
+          <div class="thumbnail" style="height:550px;">
+            <img src="img/homePage/350x250-F1.png" alt="">
+            <div class="caption">
+              <h3 class="text-center">Apartamentos Etapa Azul</h3>
+              <p>Una etapa inspirada en la armonía de la naturaleza. Apartamentos nuevos desde 275,000.</p>
+              <p><a href="#" class="btn btn-success btn-lg btn-block" role="button">Button</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-xs-4">
+          <div class="thumbnail" style="height:550px;">
+            <img src="img/homePage/350x250-F2.png" alt="">
+            <div class="caption">
+              <h3 class="text-center">Club House</h3>
+              <p style="margin-top:20px;">Disfrute de la tranquilidad, el buen gusto y las amenidades de un club privado. Espacios diseñados especialmente para que usted y su familia exploren a través de los sentidos, el placer de tenerlo todo en contacto con la naturaleza.</p>
+              <p><a href="#" class="btn btn-success btn-lg btn-block" role="button" style="margin-top:20px;">Button</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-xs-4">
+          <div class="thumbnail" style="height:550px;">
+            <img src="img/homePage/350x250-F3.png" alt="">
+            <div class="caption">
+              <h3 class="text-center">Complejo Deportivo para todos</h3>
+              <p>Usted no encontrará un lugar más espectacular para la hacer deporte. Tenis, baloncesto, voleibol y una zona de juegos infantiles lista para que usted la disfrute.</p>
+              <p><a href="#" class="btn btn-success btn-lg btn-block" role="button" style="margin-top:20px;">Button</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /END THE FEATURETTES -->
+
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+  
+
+</body>

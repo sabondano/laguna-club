@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% include head.html %}
+    <meta name="google-site-verification" content="8Gq6jvtzW9Lt-RHTo-XYV9dSfjuydTeMIV2SNQBmZws" />
+</head>
+
+<body>
+	{{ content }}
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+  	<script type="text/javascript" src="js/feedback_tab.js"></script>
+
+  	<script type="text/javascript">
+
+
+//On click appearance of Racer products
+$(function(){
+    $("#es").on("click", function(){
+    	$('.español').hide().next().fadeIn();
+    	$("#en").addClass("active");
+    	$("#es").removeClass("active");
+    });
+});
+$(function(){
+    $("#language").on("click", function(){
+    	if($('.español').is(":visible")){
+    		$('.español').hide().next().fadeIn();
+    		$("#language").removeClass("active"); }
+    	else if($('.english').is(":visible")){
+    		$('.english').hide().prev().fadeIn(); }
+    });
+});
+
+</script>
+
+
+
+</body>
+
+<footer>
+	{% include footer.html %}
+</footer>
+
+</html>
